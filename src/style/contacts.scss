@@ -1,0 +1,59 @@
+.contacts {
+  padding-top: 50px;
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #28478d;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #28478d;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__header .icon-map {
+    margin-right: 15px;
+    width: 28px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://idnayka.ru/wp-content/themes/idnaykaru/assets/images/icon/icon-map.svg);
+  }
+  &__header .icon-phone {
+    margin-right: 15px;
+    width: 28px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://idnayka.ru/wp-content/themes/idnaykaru/assets/images/icon/icon-phone.svg);
+  }
+  &__header .icon-mail {
+    margin-right: 15px;
+    width: 28px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://idnayka.ru/wp-content/themes/idnaykaru/assets/images/icon/icon-mail.svg);
+  }
+
+  &__house {
+    width: 60%;
+    margin: 0 auto;
+  }
+}

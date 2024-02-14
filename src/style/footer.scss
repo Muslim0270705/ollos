@@ -1,0 +1,53 @@
+.footer {
+  padding: 50px 0;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 115px;
+    height: 40px;
+    background-image: url(https://idnayka.ru/wp-content/themes/idnaykaru/assets/images/logo.png);
+    background-size: 115px 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__menu {
+    font-size: 15px;
+  }
+
+  &__menu a {
+    color: #696969;
+  }
+
+  &__menu__items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__credits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  &__copyright a {
+    text-decoration: none;
+    color: #354a96;
+  }
+
+  &__copyright-info {
+    width: 50%;
+    font-size: 12px;
+  }
+}

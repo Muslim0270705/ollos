@@ -1,0 +1,58 @@
+.first{
+  padding: 150px 200px;
+  background: url("https://idnayka.ru/wp-content/themes/idnaykaru/assets/images/bg-slider.jpg") center/cover no-repeat;
+  position: relative;
+
+  .grad{
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    background-position: right center;
+    background-repeat: repeat-y;
+    background-image: url("https://idnayka.ru/wp-content/themes/idnaykaru/assets/images/bg-slider.png");
+  }
+  &__info{
+    position: relative;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-20%);
+    width: 80%;
+  }
+  &__title{
+    font-size: 37px;
+    line-height: 40px;
+    display: inline;
+    font-weight: 700;
+    color: #28478d;
+  }
+  &__subdesc{
+    font-size: 24px;
+    margin-top: 20px;
+    line-height: 30px;
+    color: #28478d;
+    margin-bottom: 20px;
+    span{
+      font-weight: 700;
+      font-size: 36px;
+      color: #28478d;
+    }
+  }
+  &__btn{
+    display: inline-block;
+    margin: 25px 0;
+    white-space: nowrap;
+    border-radius: 5px;
+    background-color: #28478d;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 14px 40px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(149,148,148,0.7);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(149,148,148,0.7);
+    box-shadow: 0px 0px 5px 1px rgba(149,148,148,0.7);
+  }
+}

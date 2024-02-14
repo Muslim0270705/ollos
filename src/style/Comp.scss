@@ -1,0 +1,39 @@
+.comp{
+  padding: 80px 0;
+  &__title{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #28478d;
+    margin-bottom: 70px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+  &__card{
+    width: calc(33.33333% - 13.33333px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    &-item{
+      font-size: 25px;
+      line-height: 32px;
+      margin-bottom: 40px;
+      span{
+        font-weight: 800;
+        font-size: 36px;
+        color: #28478d;
+      }
+    }
+    img{
+
+      object-fit: cover;
+    }
+  }
+
+}

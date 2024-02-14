@@ -1,0 +1,108 @@
+.services {
+  background: #f9f9f9;
+  background-image: url(https://idnayka.ru/wp-content/themes/idnaykaru/assets/images/bg-services.png);
+  background-position: right bottom;
+  padding-top: 60px;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #28478d;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 32%;
+    padding: 30px;
+    background: #f2f2f2;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(149, 148, 148, 0.7);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(149, 148, 148, 0.7);
+    box-shadow: 0px 0px 5px 1px rgba(149, 148, 148, 0.7);
+  }
+
+  &__header {
+    background: #f5f5f5;
+    font-size: 14px;
+    min-height: 240px;
+    font-weight: 600;
+  }
+
+  &__title {
+    text-decoration: none;
+    color: #354a96;
+    display: block;
+    margin: 10px 0 20px;
+  }
+
+  &__price {
+    margin-top: 10px;
+    color: #28478d;
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  &__coast {
+    display: flex;
+    column-gap: 5px;
+    align-items: end;
+  }
+
+  &__coast span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #696969;
+    position: relative;
+    bottom: 5px;
+  }
+
+  &__item ul {
+    margin-top: 50px;
+  }
+
+  &__item-list ul li {
+    margin-bottom: 5px;
+    padding-right: 40px;
+    line-height: 24px;
+    font-size: 16px;
+    background-image: url(https://idnayka.ru/wp-content/themes/idnaykaru/assets/images/icon/icon-ok.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+
+  &__btn {
+    display: block;
+    margin: 20px auto;
+    white-space: nowrap;
+    border-radius: 5px;
+    border: none;
+    background-color: #28478d;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 14px 40px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(149, 148, 148, 0.7);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(149, 148, 148, 0.7);
+    box-shadow: 0px 0px 5px 1px rgba(149, 148, 148, 0.7);
+  }
+
+  &__item-top {
+    position: relative;
+    top: -20px;
+  }
+
+  &__bottom {
+    padding: 50px 0;
+    font-size: 14px;
+    text-align: center;
+  }
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Services = () => {
+const Services = ({setActive}) => {
     return (
-        <div className='services'>
+        <div className='services' id={3}>
             <div className="container">
                 <h2 className='services__heading'>
                     УСЛУГИ
@@ -33,7 +33,7 @@ const Services = () => {
                                 <li>Набор текстов</li>
                             </ul>
                         </div>
-                        <button  className='services__btn'>Подробнее</button>
+                        <button  className='services__btn' onClick={() => setActive((prev) => !prev)}>Заказать</button>
                     </div>
                     <div className="services__item services__item-top">
                         <div className="services__item-header">
@@ -61,7 +61,7 @@ const Services = () => {
                                 <li>   УДК, ББК, ISBN, DOI</li>
                             </ul>
                         </div>
-                        <button  className='services__btn'>Издать книгу</button>
+                        <button  className='services__btn' onClick={() => setActive((prev) => !prev)}>Заказать</button>
                     </div>
                     <div className="services__item">
                         <div className="services__item-header">
@@ -88,7 +88,7 @@ const Services = () => {
                                 <li>Размещение издания в Научной электронной библиотеке (eLibrary)</li>
                             </ul>
                         </div>
-                        <button className='services__btn'>Заказать</button>
+                        <button className='services__btn' onClick={() => setActive((prev) => !prev)}>Заказать</button>
                     </div>
                 </div>
                 <p className='services__bottom'>Цены, указанные на сайте, предназначены для ознакомления и не могут являться публичной офертой.</p>

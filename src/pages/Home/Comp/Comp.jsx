@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Comp = () => {
+const Comp = ({setActive}) => {
     return (
-        <section className="comp">
+        <section className="comp" id={1}>
             <div className="container" >
                 <h2 className="comp__title">
                     О компании
@@ -32,7 +32,7 @@ const Comp = () => {
                             с января
                              <span>2020</span> года член Европейской ассоциации научных редакторов (EASE)
                         </div>
-                        <button className={"first__btn"} style={{display: 'inline-block'}}>
+                        <button onClick={() => setActive((prev) => !prev)} className={"first__btn"} style={{display: 'inline-block'}}>
                             Связаться с нами
                         </button>
                     </div>

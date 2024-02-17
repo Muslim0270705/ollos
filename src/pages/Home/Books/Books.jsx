@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -9,8 +9,19 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard, FreeMode } from 'swiper/modules';
+import axios from "axios";
 
 const Books = () => {
+    const [data,setData] = useState([])
+
+    const getProduct = () => {
+        axios("https://db-987p.onrender.com/products")
+            .then(res => setData(res.data))
+            .catch(err => console.log(err))
+    }
+    useEffect(() => {
+        getProduct()
+    }, []);
     return (
         <div className='books'>
             <div className="container">
@@ -30,35 +41,17 @@ const Books = () => {
                         modules={[FreeMode, Navigation, Pagination, Mousewheel, Keyboard]}
                         className="mySwiper"
                     >
-                        <SwiperSlide>
-                            <img src="https://idnayka.ru/wp-content/uploads/2021/01/komkov-2020.png" alt="" />
-                            <div className="books__info">
-                                <h3 className='books__text'>Проблемы управления развитием крупномасштабных социально-экономических систем</h3>
-                                <p className='books__author'>Комоков Н. И.</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="https://idnayka.ru/wp-content/uploads/2021/01/pershukov.png" alt="" />
-                            <div className='books__info'>
-                                <h3 className='books__text'>Единая теория взаимодействия</h3>
-                                <p className='books__author'>Першуков В. М. Першуков В. В.</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="https://idnayka.ru/wp-content/uploads/2021/01/konf-2020.png" alt="" />
-                            <div className="books__info">
-                                <h3 className='books__text'>Теория и практика борьбы с паразитарными болезнями: Сборник научных статей по материалам международной научной конференции. Выпуск 21. 13–15 мая 2020 г. Москва</h3>
-                                <p className='books__author'>Комоков Н. И.</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="https://idnayka.ru/wp-content/uploads/2020/05/alferov-2020.png" alt="" />
-                            <div className="books__info">
-                                <h3 className='books__text'>Кризис-диагностика хозяйствующих субъектов: учебник (Бакалавриат)</h3>
-                                <p className='books__author'>Алфевров В. Н.</p>
-                            </div>
-                        </SwiperSlide>
-
+                        {
+                            data.map(item => (
+                                <SwiperSlide>
+                                    <img src={item.img} alt="" />
+                                    <div className="books__info">
+                                        <h3 className='books__text'>{item.title}</h3>
+                                        <p className='books__author'>{item.user}</p>
+                                    </div>
+                                </SwiperSlide>
+                            ))
+                        }
                     </Swiper>
                     <button className='books__btn'>
                         Все книги

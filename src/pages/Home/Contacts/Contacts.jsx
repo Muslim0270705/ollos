@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contacts = () => {
     return (
-        <div className='contacts'>
+        <div className='contacts' id={4}>
             <div className="container">
                 <h2 className='contacts__title'>
                     Контакты
@@ -15,7 +15,7 @@ const Contacts = () => {
                         </div>
                         <div className="contacts__info">
                             109044,
-                            г. Москва, ул. <br /> Динамовская, дом 1а, офис <br /> 519
+                            г. Бишкек, ул. <br /> Киевская, дом 1а, офис <br /> 519
                         </div>
                     </div>
                     <div className="contacts__item">
@@ -24,8 +24,8 @@ const Contacts = () => {
                             </i>Телефоны:
                         </div>
                         <div className="contacts__info">
-                            <span>+7 (903) 522-92-70</span><br />
-                            <span>+7 (499) 271-6724 </span>
+                            <span>+996 (903) 52-29-27</span><br />
+                            <span>+996 (500) 71-67-24 </span>
                         </div>
                     </div>
                     <div className="contacts__item">
@@ -75,7 +75,7 @@ const Contacts = () => {
                             <br />
 
                         </p>
-                        <p style={{ marginLeft: 50 }}><strong>Генеральный директор:</strong> Евдокимова Светлана Шамильевна</p>
+                        <p style={{ marginLeft: 50 }}><strong>Генеральный директор:</strong> Слава Светлана Шамильевна</p>
                     </div>
                 </div>
             </div>

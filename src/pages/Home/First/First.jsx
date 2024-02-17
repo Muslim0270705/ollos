@@ -1,6 +1,6 @@
 import React from 'react';
 
-const First = () => {
+const First = ({setActive}) => {
     return (
         <section className="first">
             <div className={"grad"}>
@@ -13,7 +13,7 @@ const First = () => {
                 <p className="first__subdesc">
                     скидка <span>15%</span> на издание монографий,<br/> пособий, учебников
                 </p>
-                <button className={"first__btn"}>
+                <button onClick={() => setActive((prev) => !prev)} className={"first__btn"}>
                     Связаться с нами
                 </button>
                 <div className="first__desc">

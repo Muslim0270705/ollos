@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Magazines = () => {
+const Magazines = ({setActive}) => {
     return (
-        <div className='magazines'>
+        <div className='magazines' >
             <div className="container">
                 <div className="magazines__wrapper">
                     <img src="https://idnayka.ru/wp-content/uploads/2020/04/mir.png" alt="" />
@@ -23,7 +23,7 @@ const Magazines = () => {
                         <li>
                             <a href="https://drive.google.com/file/d/1UxGmwNxrjaktNDnXOy3F-_s1sRiOCmwO/view?usp=sharing" target="_blank" rel="noffolow noopener">Спецвыпуск, посвященный 50-летию со дня основания Совета «Интеркосмос»</a>
                         </li>
-                        <button className='magazines__btn'>Сайт журнала</button>
+                        <button className='magazines__btn' onClick={() => setActive((prev) => !prev)}>Сайт журнала</button>
                     </div>
                 </div>
             </div>

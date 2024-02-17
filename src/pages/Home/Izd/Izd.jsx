@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Izd = () => {
+const Izd = ({setActive}) => {
     return (
         <section className="izd">
             <div className="container" style={{padding : "0 100px"}}>
@@ -47,7 +47,7 @@ const Izd = () => {
                         </li>
                     </ul>
                 </div>
-                <button className={"first__btn"} style={{display: 'block',margin: "30px auto 0"}}>
+                <button onClick={() => setActive((prev) => !prev)} className={"first__btn"} style={{display: 'block',margin: "30px auto 0"}}>
                     Связаться с нами
                 </button>
             </div>

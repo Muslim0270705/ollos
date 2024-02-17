@@ -1,8 +1,8 @@
 import React from 'react';
 
-const News = () => {
+const News = ({setActive}) => {
     return (
-        <section className="new">
+        <section className="new" id={2}>
             <div className="container">
                 <h2 className="new__title">
                     НОВОСТИ

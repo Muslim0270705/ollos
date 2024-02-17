@@ -61,6 +61,7 @@
     position: absolute;
     cursor: pointer;
     background-position: center;
+    top: 85%;
     background-repeat: no-repeat;
   }
 
@@ -74,17 +75,26 @@
     position: absolute;
     cursor: pointer;
     background-position: center;
+    top: 85%;
     background-repeat: no-repeat;
   }
 
   .swiper-button-next:after,
   .swiper-rtl .swiper-button-prev:after {
     content: url(https://idnayka.ru/wp-content/themes/idnaykaru/assets/images/bg-next.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-65%);
   }
 
   .swiper-button-prev:after,
   .swiper-rtl .swiper-button-next:after {
     content: url(https://idnayka.ru/wp-content/themes/idnaykaru/assets/images/bg-prev.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-65%);
   }
 
   &__btn {
